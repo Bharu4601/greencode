@@ -1,5 +1,5 @@
 -------------------------------------------------------------
-I am Ready and  I am the Spartan, Hu, Hu, Hu....
+.
 -------------------------------------------------------------
 
 1.What is a runlevel? Type of Runlevels? What is runlevel 5 and what is default runlevel and where it is defined?
