@@ -9,8 +9,7 @@ Ans:- Due to NFS mounts, where the nfs server is not responding. Check mount com
 3.You come to know that the disk is currpted after issuing multipath -ll command. What will you do?
 This is not obvious, however, it might coincidence that the disk might have been disconnected from storage due to connectivity issues, zone issues or some other technical glitch at storage end. Work with storage team to fix the issue. Once the storage team fix the issue and if you observer the data is corrupted, you need to restore from backup(liaise with backup team for the same) or you might have had rsync configured based on you environment.
 4. Tool to install Package? How will you install the same?
-I use rpm or yum command to install the package. When using rpm command, I use rpm –ivh /path/to/package, in case of yum, I use yum install packagename –y command.
-5. How do you scan a lun?
+I use rpm or yum command to install the package. When using rpm command, I use rpm –ivh /path/to/package, in case of yum, I use yum install pack
 Echo “ - - -“ > /sys/class/fc_host/hostX/scan
 6.Request from application team to build /app filesystem 20GB. Provide the complete procedure.
 I assume that I have enough free space in appvg(used by application team), if no, I will request disk from storage team(via service request), and scan the pve(tell the command). Create the pv add the same to vg(tell the command), and create lv, then create file system. Below are steps to create 20GB filesystem with /app mount point
